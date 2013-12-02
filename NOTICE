@@ -1,0 +1,17 @@
+hackney_disp
+------------
+
+2013 (c) Benoît Chesneau <benoitc@e-engura.org>
+
+hackney_disp is released under the Apache 2 license. See the LICENSE file for
+the complete license.
+
+
+Third parties
+-------------
+
+*) hackney_disp and hackney_disp_handler based on the dlhttpc project under
+the BSD license
+
+Copyright (c) 2012, Frederic Trottier-Hebert under
+the BSD license
