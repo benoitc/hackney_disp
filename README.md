@@ -4,7 +4,7 @@ Load-balanced Pool dispatcher based on
 [dispcount](https://github.com/ferd/dispcount) for
 [hackney](https://github.com/benoitc/hackney).
 
-Like the default pool handler hackney_pool, but with the difference that
+Like the default pool handler `hackney_pool`, but with the difference that
 for each endpoint (domain/ip + port + ssl) of requests, a load balancer
 is started allowing as many connections as mentioned in the
 configuration.
@@ -37,7 +37,7 @@ WARNING: use with caution, this pool handler is considered as
 experimental. It's for now nased on the code from the dlhttpc project
 and adapted to hackney.  How to use it?
 
-In your application config set the pool_handler property to hackney_disp:
+In your application config set the `pool_handler` property to `hackney_disp`:
 
     {hackney, [
         {pool_handler, hackney_disp},
@@ -50,6 +50,9 @@ In your application config set the pool_handler property to hackney_disp:
 
 and hackney will automatically use this pool.
 
-The restart, shutdown, maxr, and maxt values allow to configure the supervisor that will take care of that dispatcher. You can set the maximum number of connections with the options passed to the client: [{max_connections, 200}] .
+The restart, shutdown, maxr, and maxt values allow to configure the
+supervisor that will take care of that dispatcher. You can set the
+maximum number of connections with the options passed to the client:
+`[{max_connections, 200}]` .
 
 Note: for now you can't force the pool handler / client.
