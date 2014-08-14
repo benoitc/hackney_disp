@@ -13,7 +13,7 @@
                         public_key,
                         ssl,
                         mimetypes,
-                        dispcount
+                        dispcount,
                         hackney]},
         {env, []}
 ]}.
