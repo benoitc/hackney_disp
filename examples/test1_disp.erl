@@ -1,6 +1,6 @@
 #!/usr/bin/env escript
 %% -*- erlang -*-
-%%! -pa ./ebin -pa ./deps/mimetypes/ebin
+%%! -pa ./ebin -pa ./deps/mimetypes/ebin -pa deps/hackney/ebin -pa deps/idna/ebin -pa deps/dispcount/ebin
 
 -module(test1).
 
@@ -36,7 +36,8 @@ main(_) ->
     io:format("body: ~p~n~n", [Body2]),
 
     io:format("step 4~n", []),
-    ReqBody1 = {file, "./examples/test.json"},
+    %ReqBody1 = {file, "./examples/test.json"},
+    ReqBody1 = {file, "./deps/hackney/examples/test.json"},
     {ok, _, _, Ref4} = hackney:request(post, <<"https://friendpaste.com">>,
                                        ReqHeaders, ReqBody1),
     {ok, Body3} = hackney:body(Ref4),
