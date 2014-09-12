@@ -26,7 +26,7 @@
 
 -define(TABLE, ?MODULE).
 
--include_lib("hackney.hrl").
+-include_lib("hackney/include/hackney.hrl").
 
 start() ->
     hackney_util:require([dispcount]).

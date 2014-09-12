@@ -24,7 +24,7 @@
                 init_arg,
                 transport}).
 
--include_lib("hackney.hrl").
+-include_lib("hackney/include/hackney.hrl").
 
 init(Init) ->
     %% Make it lazy to connect. On checkout only!

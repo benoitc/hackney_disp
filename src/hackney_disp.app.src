@@ -5,15 +5,13 @@
     [
         {description, "Hackney pool handler using dispcount"},
         {vsn, "0.1.0"},
-        {registered, [hackney_pool]},
         {applications, [kernel,
                         stdlib,
                         crypto,
                         asn1,
                         public_key,
                         ssl,
-                        mimetypes,
-                        dispcount
+                        dispcount,
                         hackney]},
         {env, []}
 ]}.
