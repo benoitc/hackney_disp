@@ -12,7 +12,6 @@
                         asn1,
                         public_key,
                         ssl,
-                        mimetypes,
                         dispcount,
                         hackney]},
         {env, []}
